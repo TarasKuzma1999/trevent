@@ -29,3 +29,22 @@ $('.products_meny').mouseleave( function() {
     $('.nav_products').css('display', 'none');
     $('.triangle_submenu').css('display', 'none');
 })  
+
+
+$('.banner_slider').slick({
+    infinite: true,
+    dots: true,
+    autoplay: true
+});
+
+$('.products_first_card').mouseenter( function(){
+    $('.products_first_card h3').css('display', 'none');
+    $('.hidden_text').fadeIn(1000);
+})
+
+
+
+$('.products_first_card').mouseleave( function(){
+    $('.hidden_text').css('display', 'none');;
+    $('.products_first_card h3').fadeIn(1000);
+})

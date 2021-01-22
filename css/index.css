@@ -108,6 +108,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .language_list p {
@@ -156,17 +157,25 @@ header {
 
 .nav_support {
     background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 120px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
+    z-index: 1;
 }
 
 .nav_products {
     background-color: #fff;
     height: 100px;
     display: none;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    z-index: 1;
 }
 
 .nav_support nav a {
@@ -189,10 +198,225 @@ header {
     display: none;
 }
 
+.banner_slider {
+    height: 750px;
+}
 
+.slides {
+    height: 750px;
+    width: 100%;
+    background: url(../img/slider_fan.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.slide_text {
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.slides h2 span {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 37px;
+}
+
+.slides h2 {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-left: 750px;
+}
+
+.slides p {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 19px;
+    max-width: 500px;
+    margin: 30px 0 30px 750px;
+}
+
+.slides a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: #E6362C;
+    margin-left: 750px;
+}
+
+.slides a:hover {
+    background: #C2362C;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #E6362C;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #E6362C;
+}
+
+.benefits {
+    display: flex;
+    max-width: 1200px;
+    margin: 80px auto;
+    justify-content: space-between;
+
+}
+
+.benefits div {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.benefits div img {
+    height: 90px;
+}
+
+.benefits div h3 {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.benefits div p {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+
+.products {
+    background: url(../img/products_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products hr {
+    width: 1300px;
+    margin: auto;
+}
+
+.products h2 {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    margin: 80px 0 50px;
+}
+
+.products p {
+    max-width: 970px;
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products .products_cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1430px;
+    margin-bottom: 80px;
+}
+
+.products .products_cards div {
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .products_cards .hidden_text {
+    display: none;
+}
+
+.products .products_cards .hidden_text img {
+    height: 65px;
+}
+
+.products .products_cards .hidden_text h4 {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.products .products_cards .hidden_text p {
+    color: #fff;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 240px;
+}
+
+.products .products_cards .hidden_text a {
+    text-decoration: none;
+    background: #E6362C;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 14px;
+}
+
+.products .products_cards .hidden_text a:hover {
+    background: #C2362C;
+}
+
+
+.products_first_card {
+
+    background-image: url(../img/products_first_card.png);
+}
+
+.products_second_card {
+    background: url(../img/products_second_card.png);
+}
+
+.products_third_card {
+    background: url(../img/products_third_card.png);
+}
+
+.products_fourth_card {
+    background: url(../img/products_fourth_card.png);
+}
+
+.products .products_cards div h3 {
+    font-family: 'Segoe UI Regular', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    max-width: 200px;
+    text-align: center;
+}
 
 body {
-    background-color: aqua;
+    background-color: black;
 }
 
 img {
