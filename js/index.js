@@ -48,3 +48,12 @@ $('.products_first_card').mouseleave( function(){
     $('.hidden_text').css('display', 'none');;
     $('.products_first_card h3').fadeIn(1000);
 })
+
+
+$('.partners_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    prevArrow: "<img src='img/left_arrow_partners_slider.svg' style= 'height : 20px' class='prev' alt='1'>",
+    nextArrow: "<img src='img/right_arrow_partners_slider.svg' style= 'height : 20px' class='next' alt='2'>"
+});
