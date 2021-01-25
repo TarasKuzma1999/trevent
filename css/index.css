@@ -6,6 +6,13 @@
         url('../font/SegoeUI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-family: 'Clear Sans Regular';
+    src: url('ClearSans.eot');
+    src: url('ClearSans.eot?#iefix') format('embedded-opentype'),
+        url('ClearSans.woff') format('woff'),
+        url('ClearSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -136,7 +143,7 @@ body {
 
 .header_nav nav a {
     text-decoration: none;
-    font-family: 'Segoe UI Regular', sans-serif;
+    font-family: 'Clear Sans Regular', sans-serif;
     font-size: 19px;
     color: #fff;
     margin: 20px;
@@ -152,6 +159,20 @@ body {
 .header_nav nav a img {
     height: 12px;
 }
+
+.header_nav nav .arrow_hover {
+    background-image: url(../img/down_arrow.svg);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-size: cover;
+}
+
+.header_nav nav a:hover .arrow_hover {
+    background-image: url(../img/down_arrow_hover.svg);
+}
+
+
 
 .nav_support {
     background-color: #fff;
