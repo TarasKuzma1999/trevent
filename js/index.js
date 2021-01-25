@@ -9,7 +9,10 @@ $('.language').mouseleave( function() {
 
 $('.support_meny').mouseenter( function() {
     $('.nav_support').css('display', 'flex');
-    $('.triangle_submenu').css('display', 'inline');
+    $('.triangle_submenu').css({
+        'display' : 'inline',
+        'left' : '1165px'        
+    });
 });
 
 $('.support_meny').mouseleave( function() {
@@ -21,7 +24,7 @@ $('.products_meny').mouseenter( function() {
     $('.nav_products').css('display', 'flex');
     $('.triangle_submenu').css({
         'display': 'inline',
-        'left' : '1010px'
+        'left' : '990px'
     });
 });
 
